@@ -40,4 +40,8 @@ public class AppModule {
     static Drawable provideAppDrawable(Application application){
         return ContextCompat.getDrawable(application,R.drawable.logo);
     }
+
+
+
+
 }

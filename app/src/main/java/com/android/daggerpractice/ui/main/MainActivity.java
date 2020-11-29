@@ -20,7 +20,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this,"main activity",Toast.LENGTH_SHORT).show();
+
 
         testFragment();
     }

@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.android.daggerpractice.BaseActivity;
 import com.android.daggerpractice.R;
+import com.android.daggerpractice.ui.main.profile.ProfileFragment;
 
 public class MainActivity extends BaseActivity {
     private static final String TAG = "MainActivity";
@@ -21,7 +22,11 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         Toast.makeText(this,"main activity",Toast.LENGTH_SHORT).show();
 
-
+        testFragment();
+    }
+    private void testFragment(){
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.main_container,new ProfileFragment()).commit();
     }
 
     @Override
